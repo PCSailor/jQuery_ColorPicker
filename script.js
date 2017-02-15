@@ -5,7 +5,8 @@ $( document ).ready(function(){
   // #ffff00 // yellow
   // #0000ff // blue
   var colorName = ['Red', 'Green', 'Yellow', 'Blue', 'Black', 'Purple']
-  for (var i = 0; i < 6; i++) {
+  console.log(colorName);
+  for (var i = 0; i < colorName.length; i++) {
     var gameButton = $('<button></button>');
     $('body').append(gameButton);
     gameButton.data('idNumber', i);
@@ -23,12 +24,12 @@ $( document ).ready(function(){
     return Math.floor(Math.random() * (1 + max - min) + min); }
 
 
-    var any = randomNumber(0,5);
+    var any = randomNumber(0,colorName.length);
     $('h3').append('See if you can click the ' + colorName[any] + ' color!')
       $('button').on('click', function(){
       if ($(this).data().idNumber == any)
       {$('h2').text("Well done!  You picked wisely!");
-      any = randomNumber(0,5);
+      any = randomNumber(0,colorName.length);
       $('h3').text('Click the ' + colorName[any] + ' color!');
       var setTimeoutID = ($(this).fadeOut(100));
       var setTimeoutID = ($(this).fadeIn(100));
