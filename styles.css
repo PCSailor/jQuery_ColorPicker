@@ -1,0 +1,58 @@
+body {
+  background-color: lightgray;
+}
+.color {
+  float: left;
+  margin: 5px;
+  border: 1px solid black;
+  width: 100px;
+  height: 100px;
+}
+.red {
+background: #ff0000;
+}
+.green {
+  background: #00ff00;
+}
+.yellow {
+  background: #ffff00;
+}
+.blue {
+  background: #0000ff;
+}
+
+#1{
+  width: 300px;
+  height: 300px;
+    border: 12px solid black;
+    padding: 25px;
+    margin: 25px;
+    /*background-color: blue;*/
+}
+
+#2{
+  width: 100px;
+  height: 100px;
+    border: 12px solid black;
+    padding: 25px;
+    margin: 25px;
+    /*background-color: red;*/
+}
+
+#3{
+  width: 100px;
+  height: 100px;
+    border: 12px solid black;
+    padding: 25px;
+    margin: 25px;
+    /*background-color: green;*/
+}
+
+#4{
+  width: 100px;
+  height: 100px;
+    border: 12px solid black;
+    padding: 25px;
+    margin: 25px;
+    /*background-color: yellow;*/
+}
